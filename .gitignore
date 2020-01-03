@@ -129,3 +129,4 @@ dmypy.json
 .pyre/
 /.idea/
 /aws-workshop.iml
+/node_modules/

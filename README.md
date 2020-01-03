@@ -47,6 +47,49 @@ $ node server.js
 
 ```
 
+Open a new terminal and test:
+
+```shell script
+
+$ curl localhost:8080
+
+```
+
+Update `package.json` with `pm2` dependency.
+
+```json
+
+
+
+```
+
+Run `npm install` to install the dependency.
+
+```shell script
+
+$ npm install
+
+```
+
+Create the logs directory:
+
+```shell script
+
+$ mkdir ../logs
+
+```
+
+Issue `npm start` and test.
+
+```shell script
+
+$ npm start
+$ curl localhost:8080
+
+```
+
+
+
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
