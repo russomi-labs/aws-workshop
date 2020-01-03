@@ -1,23 +1,50 @@
-# Foobar
+# aws-workshop
 
-Foobar is a Python library for dealing with word pluralization.
+This workshop is based on [The Good Parts of AWS](https://gum.co/aws-good-parts).
 
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+Install [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) and [npm](https://www.npmjs.com/get-npm).
 
-```bash
-pip install foobar
+## Getting Started
+
+Create a new directory, initialize git and npm.
+
+```shell script
+
+$ mkdir aws-workshop && cd aws-workshop
+$ git init
+$ npm init -y
+
 ```
 
-## Usage
+Create a simple `server.js`:
 
-```python
-import foobar
+```js
 
-foobar.pluralize('word') # returns 'words'
-foobar.pluralize('goose') # returns 'geese'
-foobar.singularize('phenomena') # returns 'phenomenon'
+const {hostname} = require('os');
+const http = require('http');
+const message = 'Hello World\n';
+const port = 8080;
+
+const server = http.createServer((req, res) => {
+    res.statusCode = 200;
+    res.setHeader('Content-Type', 'text/plain');
+    res.end(message);
+});
+
+server.listen(port, hostname, () => {
+    console.log(`Server running at http://${hostname()}:${port}/`);
+});
+
+```
+
+Use `node` to execute `server.js`.
+
+```shell script
+
+$ node server.js
+
 ```
 
 ## Contributing

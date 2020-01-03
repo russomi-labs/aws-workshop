@@ -1,0 +1,24 @@
+{
+  "name": "aws-workshop",
+  "version": "1.0.0",
+  "description": "Foobar is a Python library for dealing with word pluralization.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node ./node_modules/pm2/bin/pm2 start ./server.js --name hello_aws --log ../logs/app.log ",
+    "stop": "node ./node_modules/pm2/bin/pm2 stop hello_aws"
+  },
+  "dependencies": {
+    "pm2": "^4.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/russomi-labs/aws-workshop.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/russomi-labs/aws-workshop/issues"
+  },
+  "homepage": "https://github.com/russomi-labs/aws-workshop#readme"
+}
